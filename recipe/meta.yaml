@@ -1,5 +1,5 @@
 {% set name = "array-api-strict" %}
-{% set version = "2.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/array_api_strict-{{ version }}.tar.gz
-  sha256: 002e107e6778edb0bb509c45ba018a70dd4ee4402fcb9c11ac3761039644d52e
+  sha256: 48dfaff53830cda61509bc175480f7700d1a0ff603383a4a683b2d532f78ab46
 
 build:
   noarch: python
