@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@asmeurer](https://github.com/asmeurer/)
 * [@rgommers](https://github.com/rgommers/)
 
-
-<!-- dummy commit to enable rerendering -->
-
