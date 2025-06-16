@@ -1,5 +1,6 @@
 {% set name = "array-api-strict" %}
 {% set version = "2.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools <=75
+    - setuptools_scm >8
   run:
     - python >={{ python_min }}
     - numpy
