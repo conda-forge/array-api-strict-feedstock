@@ -1,5 +1,6 @@
 {% set name = "array-api-strict" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/array_api_strict-{{ version }}.tar.gz
-  sha256: 0da347ba3cb59d9a7d7e6f4123622b11bd00851f4d7a3ad1d5b5fd911aead45e
+  sha256: 7a0d5a0622a5479d6ffe6ef8ce09e7e4337fdf4cce5f52a89727c11a499a1367
 
 build:
   noarch: python
@@ -18,7 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools <=75
+    - setuptools_scm >8
   run:
     - python >={{ python_min }}
     - numpy
