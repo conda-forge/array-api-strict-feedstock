@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: array-api-strict
-  version: "2.6"
+  version: "2.6.1"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/array_api_strict-${{ version }}.tar.gz
-  sha256: 5a6891ae3a14c5183fd2b19104a11c19cc34cbc2fffb9b6ff95b7de6f3bf4c0c
+  sha256: 27485fd687c678894fb193e8f9f5116651a0bfc19dccea164d7d5df83b4e9a82
 
 build:
   number: 0
